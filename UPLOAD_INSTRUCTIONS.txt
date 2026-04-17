@@ -1,0 +1,123 @@
+================================================================================
+CRITICAL: WHERE TO UPLOAD YOUR FILES
+================================================================================
+
+Based on your error logs, your domain points to:
+/home1/hpjjcmmy/public_html/website_6bf17d95/
+
+YOU MUST UPLOAD ALL FILES TO THIS EXACT LOCATION!
+
+================================================================================
+STEP-BY-STEP UPLOAD INSTRUCTIONS
+================================================================================
+
+1. LOG INTO BLUEHOST CPANEL
+   - Go to bluehost.com
+   - Click "Login" or "cPanel Login"
+   - Enter your credentials
+
+2. OPEN FILE MANAGER
+   - In cPanel, find "File Manager" (under Files section)
+   - Click to open it
+
+3. NAVIGATE TO THE CORRECT FOLDER
+   - Click on "public_html" folder
+   - Look for folder named "website_6bf17d95"
+     * IF IT EXISTS: Double-click to open it
+     * IF IT DOESN'T EXIST: 
+       - Right-click in empty space
+       - Select "Create Folder"
+       - Name it: website_6bf17d95
+       - Double-click to open it
+
+4. UPLOAD YOUR FILES (in this exact order)
+   
+   Inside the "website_6bf17d95" folder, upload:
+   
+   a) .htaccess file
+      - Click "Upload" button in File Manager
+      - Select the .htaccess file
+      - Wait for upload to complete
+   
+   b) index.html
+      - Upload this file
+      - This is your main website file
+   
+   c) app.js
+      - Upload this JavaScript file
+   
+   d) css folder
+      - Upload the entire "css" folder
+      - Make sure it contains:
+        * style.css
+        * icon-font.css
+        * fonts/ (if you have font files)
+   
+   e) img folder
+      - Upload the entire "img" folder
+      - Make sure all images are inside
+
+5. SET FILE PERMISSIONS
+   
+   Right-click on each file/folder and set permissions:
+   
+   Files (.htaccess, index.html, app.js):
+   - Click "Change Permissions"
+   - Set to: 644
+   - Click "Change Permissions" button
+   
+   Folders (css, img):
+   - Click "Change Permissions"
+   - Set to: 755
+   - Click "Change Permissions" button
+
+6. VERIFY YOUR STRUCTURE
+   
+   Your website_6bf17d95 folder should look like this:
+   
+   website_6bf17d95/
+   ├── .htaccess
+   ├── index.html
+   ├── app.js
+   ├── css/
+   │   ├── style.css
+   │   └── icon-font.css
+   └── img/
+       └── (all your images)
+
+7. TEST YOUR WEBSITE
+   - Clear your browser cache (Ctrl+Shift+Delete)
+   - Visit: https://banadzemberinyny.com
+   - Your site should load!
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+✓ The .htaccess file MUST be in the same folder as index.html
+✓ All file and folder names must be lowercase (css, img, not CSS, IMG)
+✓ Make sure index.html is INSIDE website_6bf17d95, not in public_html
+✓ File permissions are critical - 644 for files, 755 for folders
+
+================================================================================
+IF IT STILL DOESN'T WORK
+================================================================================
+
+Option A: Check if files are in the right place
+- In File Manager, go to public_html/website_6bf17d95/
+- Verify index.html is there
+- Verify .htaccess is there
+
+Option B: Contact Bluehost Support
+- Call: 1-888-401-4678
+- Tell them: "My domain banadzemberinyny.com points to 
+  website_6bf17d95 but I'm getting a 500 error. I've uploaded 
+  index.html to that directory. Can you verify the domain 
+  configuration?"
+
+Option C: Change domain to point to public_html
+- In cPanel → Domains → Manage
+- Change document root from "website_6bf17d95" to "public_html"
+- Then upload files directly to public_html (not in subfolder)
+
+================================================================================
